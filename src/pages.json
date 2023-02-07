@@ -1,0 +1,157 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "name": "home",
+      "style": {}
+    },
+    {
+      "path": "pages/account/login",
+      "name": "login",
+      "style": {}
+    },
+    {
+      "path": "pages/home/albumInfo",
+      "name": "albumInfo",
+      "style": {}
+    },
+    {
+      "path": "pages/account/regist",
+      "name": "regist",
+      "style": {}
+    },
+    {
+      "path": "pages/myListen/index",
+      "name": "myListen",
+      "style": {}
+    },
+    {
+      "path": "pages/myListen/info",
+      "name": "myListenInfo",
+      "style": {}
+    },
+    {
+      "path": "pages/other/downloadInfo",
+      "name": "myListenInfo",
+      "style": {}
+    },
+    {
+			"path": "pages/play/index",
+			"name": "play",
+			"style": {}
+		},
+		{
+			"path": "pages/play/discuss",
+			"name": "play",
+			"style": {}
+		},
+    {
+      "path": "pages/mine/index",
+      "name": "mine",
+      "style": {}
+    },
+    {
+      "path": "pages/mine/accountManage/changeAccount",
+      "name": "changeAccount",
+      "style": {}
+    },
+    {
+      "path": "pages/mine/accountManage/addAccount",
+      "name": "addAccount",
+      "style": {}
+    },
+    {
+      "path": "pages/mine/setting/user",
+      "name": "settingUser",
+      "style": {}
+    },
+    {
+      "path": "pages/mine/placard/list",
+      "name": "placardList",
+      "style": {}
+    },
+    {
+      "path": "pages/mine/placard/detail",
+      "name": "placardDetail",
+      "style": {}
+    },
+    {
+      "path": "pages/mine/feedBack",
+      "name": "feedBack",
+      "style": {}
+    },
+    {
+      "path": "pages/mine/feedRecord",
+      "name": "feedRecord",
+      "style": {}
+    },
+    {
+      "path": "pages/other/myDownload",
+      "name": "myDownload",
+      "style": {}
+    },
+    {
+      "path": "pages/other/downloading",
+      "name": "downloading",
+      "style": {}
+    },
+    {
+      "path": "pages/other/myHistory",
+      "name": "myHistory",
+      "style": {}
+    },
+    {
+      "path": "pages/other/mySollect",
+      "name": "mySollect",
+      "style": {}
+    },
+    {
+      "path": "pages/other/downloadMore",
+      "name": "downloadMore",
+      "style": {}
+    }
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#d81e06",
+    "borderStyle": "black",
+    "backgroundColor": "#161819",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/image/tabbar/home_1.png",
+        "selectedIconPath": "static/image/tabbar/home_2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/myListen/index",
+        "iconPath": "static/image/tabbar/listen_1.png",
+        "selectedIconPath": "static/image/tabbar/listen_2.png",
+        "text": "我听"
+      },
+      {
+        "pagePath": "pages/play/index",
+        "iconPath": "static/image/tabbar/play_1.png",
+        "selectedIconPath": "static/image/tabbar/play_2.png",
+        "text": "播放"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/image/tabbar/mine_1.png",
+        "selectedIconPath": "static/image/tabbar/mine_2.png",
+        "text": "设置"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "逍遥有声书",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "onReachBottomDistance": 50
+  }
+}

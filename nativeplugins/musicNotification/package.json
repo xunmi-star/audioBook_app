@@ -1,0 +1,27 @@
+{
+	"name": "musicNotification",
+	"id": "musicNotification",
+	"version": "2.0.9",
+	"description": "Android音乐通知栏",
+	"_dp_type": "nativeplugin",
+	"_dp_nativeplugin": {
+		"android": {
+			"plugins": [{
+				"type": "module",
+				"name": "musicNotification",
+				"class": "com.xzh.musicnotification.MusicNotificationModule"
+			}],
+			"integrateType": "aar",
+			"compileOptions": {
+				"sourceCompatibility": "1.8",
+				"targetCompatibility": "1.8"
+			},
+            "parameters": {
+                "favour": {
+                    "des": "是否开启收藏按钮",  
+                    "key": "xzh_favour"
+                }
+            } 
+		}
+	}
+}
