@@ -371,7 +371,6 @@ export default class playIndex extends Vue {
 }
 
 .main{
-  margin-top: $header-margin-top;
   margin-bottom: 200rpx;
   overflow: hidden;
   z-index: 1;

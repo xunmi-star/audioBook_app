@@ -245,6 +245,10 @@ page{
   background: var(--bcgColor);
 }
 
+.page{
+  padding-top: var(--status-bar-height);
+}
+
 .title-box{
   font-size: 48rpx;
   text-align: center;

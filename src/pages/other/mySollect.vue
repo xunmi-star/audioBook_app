@@ -113,7 +113,7 @@ export default class Subscribe extends Vue{
 $width: 45rpx;
 
 .card-box{
-  margin: $header-margin-top 0 0;
+  margin: 0 0 0;
   padding-bottom: 50rpx;
   overflow: hidden;
   .title{

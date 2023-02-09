@@ -46,7 +46,6 @@ export default class Feedback extends Vue{
 
 <style lang="scss" scoped>
 .main-box{
-  margin-top: $header-margin-top;
   padding: $space-block;
 }
 

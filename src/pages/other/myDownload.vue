@@ -89,7 +89,7 @@ export default class DownLoad extends Vue{
 $width: 45rpx;
 $height: 180rpx;
 .card-box{
-  margin: $header-margin-top $space-norm;
+  margin: 0 $space-norm;
   .card{
     .title{
       padding: 5rpx $space-block;

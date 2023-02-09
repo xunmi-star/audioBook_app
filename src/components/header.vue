@@ -1,80 +1,60 @@
 <template>
-	<view class="cmp" :class="[`theme-${$store.state.Seeting.theme.name}`]">
-		<view class="header">
-      <view class="icon-font">
-				<text name="arrow-left" class="iconfont icon-fanhui"  @click="back(cmpData.leftUrl)"></text>
-			</view>
-      <view class="title">{{ cmpData.title }}</view>
-			<view class="icon-font right">
-				<text class="subtitle" v-if="cmpData.subtitle"  @click="back(cmpData.rightUrl)">{{cmpData.subtitle}}</text>
-				<text name="arrow-right" class="iconfont icon-fanhui2" :class="[cmpData.rightIcon?'':'hidden']" @click="back(cmpData.rightUrl)"></text>
-			</view>
-		</view>
-	</view>
+  <view class="cmp">
+    <u-navbar
+      :bgColor="$store.state.Seeting.theme.bcgColor"
+      :titleStyle="{ color: $store.state.Seeting.theme.fontColor }"
+      :title="cmpData.title"
+      :safeAreaInsetTop="navbarData.safeAreaInsetTop"
+      :placeholder="navbarData.placeholder"
+      :fixed="navbarData.fixed"
+      @leftClick="back(cmpData.leftUrl)"
+      @rightClick="back(cmpData.rightUrl)"
+    >
+      <view class="u-nav-slot" slot="right">
+        <text>{{ cmpData.subtitle }}</text>
+      </view>
+    </u-navbar>
+  </view>
 </template>
 
 <script lang='ts'>
-import { Component, Vue, Watch, Prop } from 'vue-property-decorator'
+import { Component, Vue, Watch, Prop } from "vue-property-decorator";
 
 @Component({})
-export default class Head extends Vue{
-@Prop (Object) cmpData?: Object
+export default class Head extends Vue {
+  @Prop(Object) cmpData?: Object;
 
-back(url?: string) {
-	let arr = ['/pages/home/index','/pages/myListen/index','/pages/play/index','/pages/mine/index']
-	let flag = arr.find(item=>{return url === item})
-
-	if(!url){
-		uni.navigateBack({delta: 1})
-		return
+	private navbarData: Object = {
+		safeAreaInsetTop: true as boolean, //是否开启顶部安全区适配
+		placeholder: !true as boolean, //固定在顶部时，是否生成一个等高元素，以防止塌陷
+		fixed: !true as boolean, //导航栏是否固定在顶部
 	}
 
-	if(url && flag){
-		uni.switchTab({url})
-	}else{
-		uni.navigateTo({url})
-	}
+  back(url?: string) {
+    let arr = [
+      "/pages/home/index",
+      "/pages/myListen/index",
+      "/pages/play/index",
+      "/pages/mine/index",
+    ];
+    let flag = arr.find((item) => {
+      return url === item;
+    });
 
+    if (!url) {
+      uni.navigateBack({ delta: 1 });
+      return;
+    }
+
+    if (url && flag) {
+      uni.switchTab({ url });
+    } else {
+      uni.navigateTo({ url });
+    }
+  }
 }
-
-}
-
 </script>
 
 <style lang="scss" scoped>
-.cmp {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: $header-margin-top;
-	font-size: 36rpx;
-	overflow: hidden;
-	z-index: 99;
-}
-.header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: $header-margin-top;
-	padding-right: $space-norm;
-  .icon-font{
-		flex: 1;
-		text-indent: 10rpx;
-		.iconfont{
-			font-size: 46rpx;
-		}
-  }
-	.right{
-		text-align: right;
-		margin-right: $space-norm;
-		.subtitle{
-			font-size: 28rpx;
-		}
-	}
-}
-.hidden{
-  visibility: hidden;
-}
+
 </style>

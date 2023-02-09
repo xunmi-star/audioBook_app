@@ -119,7 +119,6 @@ export default class Regist extends Vue {
 
 <style lang="scss" scoped>
 .main{
-  padding-top: $header-margin-top;
   box-sizing: border-box;
 }
 

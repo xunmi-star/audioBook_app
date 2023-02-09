@@ -293,7 +293,7 @@ export default class DownloadMore extends Vue{
 <style lang="scss" scoped>
 .nav-box{
   position: fixed;
-  top: $header-margin-top;
+  top: 0;
   left: 0;
   width: 100%;
   height: 50rpx;
@@ -325,7 +325,7 @@ export default class DownloadMore extends Vue{
 }
 
 .list{
-  padding-top: $header-margin-top + 50rpx + 50rpx;
+  padding-top:  50rpx + 50rpx;
   margin-bottom: 100rpx;
   .item{
     display: flex;

@@ -182,7 +182,6 @@ export default class addAccount extends Vue {
 
 <style lang="scss">
 .main{
-  padding-top: $header-margin-top;
   box-sizing: border-box;
 }
 

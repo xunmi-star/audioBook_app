@@ -177,7 +177,7 @@ export default class downloading extends Vue {
 
 <style lang="scss" scoped>
 .card-box {
-  margin: $header-margin-top $space-norm;
+  margin: 0 $space-norm;
   .card{
     margin: $space-norm 0;
     .head{

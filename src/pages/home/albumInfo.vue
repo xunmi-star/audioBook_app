@@ -290,7 +290,6 @@ export default class AlbumInfo extends Vue{
 .head-box{
   display: flex;
   align-content: center;
-  margin-top: $header-margin-top;
   padding: 50rpx 50rpx 0;
   .right{
     display: flex;

@@ -62,6 +62,7 @@ export default class Index extends Vue {
 .page{
   overflow: hidden;
   padding-bottom: 180rpx;
+  padding-top: var(--status-bar-height);
 }
 .nav-box{
   display: flex;

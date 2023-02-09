@@ -196,7 +196,6 @@ export default class SettingUser extends Vue{
 
 <style lang="scss" scoped>
 .main{
-  margin-top: $header-margin-top;
   padding: $space-norm;
   box-sizing: border-box;
 }

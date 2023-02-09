@@ -251,10 +251,6 @@ export default class Discuss extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.page{
-  margin-top: $header-margin-top;
-}
-
 .all-discuss-box{
 	margin: $space-norm $space-norm 0;
 	padding: 10rpx 0;

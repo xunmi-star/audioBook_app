@@ -10,6 +10,7 @@
             "ignoreVersion" : true
         },
         "statusbar" : {
+            "style": "dark",
             "immersed" : true
         },
         "modules" : {},

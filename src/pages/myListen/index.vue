@@ -66,12 +66,13 @@ export default class MyListen extends Vue {
 .section-box{
   position: fixed;
   width: 100%;
-  top: 0;
+  top: var(--status-bar-height);;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: $space-norm;
+  padding-top: 0;
   z-index: 99;
   .item{
     margin: 0 $space-block;

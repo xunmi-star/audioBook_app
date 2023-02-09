@@ -93,7 +93,7 @@ export default class Feedback extends Vue{
 
 <style lang="scss" scoped>
 .head-box{
-  margin: $header-margin-top $space-norm $space-norm;
+  margin: 0 $space-norm $space-norm;
 }
 
 .rich-box{

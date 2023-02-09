@@ -137,7 +137,7 @@ export default class History extends Vue{
 $width: 45rpx;
 
 .card-box{
-  margin: $header-margin-top $space-norm 0;
+  margin: 0 $space-norm 0;
   padding-bottom: 50rpx;
   .card{
     .title{

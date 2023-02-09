@@ -220,7 +220,6 @@ export default class myListenInfo extends Vue{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: $header-margin-top;
   padding: $space-block;
   width: 100%;
   height: 150rpx;
